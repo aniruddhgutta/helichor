@@ -4,7 +4,7 @@
 slight tweaks, along with a custom [new-tab-page](./newtab).
 
 ## Preview
-![helium](../demo/preview.webp?raw=true)
+![helichor](../demo/preview.webp)
 
 ---
 
