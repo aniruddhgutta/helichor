@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Helium Ultra Dark",
+  "version": "1.4",
+  "description": "Port of Brave's Ultra Dark theme to Helium.",
+  "theme": {
+    "colors": {
+      "frame":                                   [ 20,  20,  23],
+      "frame_inactive":                          [ 20,  20,  23],
+      "frame_incognito":                         [ 20,  20,  23],
+      "frame_incognito_inactive":                [ 20,  20,  23],
+
+      "toolbar":                                 [ 32,  32,  36],
+      "toolbar_text":                            [255, 255, 255],
+      "toolbar_button_icon":                     [255, 255, 255],
+      "button_background":                       [ 20,  20,  23],
+
+      "tab_text":                                [255, 255, 255],
+      "background_tab":                          [ 20,  20,  23],
+      "background_tab_inactive":                 [ 20,  20,  23],
+      "background_tab_incognito":                [ 20,  20,  23],
+      "background_tab_incognito_inactive":       [ 20,  20,  23],
+      "tab_background_text":                     [255, 255, 255],
+      "tab_background_text_inactive":            [255, 255, 255],
+      "tab_background_text_incognito":           [255, 255, 255],
+      "tab_background_text_incognito_inactive":  [255, 255, 255],
+
+      "bookmark_text":                           [255, 255, 255],
+
+      "omnibox_background":                      [ 20,  20,  23],
+      "omnibox_text":                            [255, 255, 255],
+
+      "ntp_background":                          [ 20,  20,  23],
+      "ntp_text":                                [255, 255, 255],
+      "ntp_link":                                [ 10, 132, 255],
+      "ntp_header":                              [242, 242, 247]
+    },
+    "properties": {
+      "ntp_logo_alternate": 1
+    }
+  }
+}
