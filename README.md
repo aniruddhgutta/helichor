@@ -23,8 +23,20 @@ this repo contains two seperate extensions, since helium ignores
 
 ### Packed
 
-1. Download both `.crx` files from the latest
-   [release](https://codeberg.org/oceanicc/helichor/releases)
+1. Download both `.crx` files:
+  - From the terminal
+  ```sh
+  VER="v1.0"  # check what the latest version is
+  for i in theme newtab; do
+    curl -LO https://codeberg.org/oceanicc/helichor/releases/download/$VER/helichor-$i-$VER.crx
+  done
+  ```
+
+  - From the browser:
+  open the latest [release](https://codeberg.org/oceanicc/helichor/releases)
+  and right-click each `.crx` →  **Save link as…**. Don't click it directly, since
+  helium tries to install it on download and fails with `CRX_REQUIRED_PROOF_MISSING`
+
 2. Open `helium://extensions` and enable **Developer mode** (top-right toggle)
 3. Drag each `.crx` onto the page
 4. Done
