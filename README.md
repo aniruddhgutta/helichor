@@ -4,7 +4,7 @@
 slight tweaks, along with a custom [new-tab-page](./newtab).
 
 ## Preview
-![helichor](../demo/preview.webp)
+![helichor](https://codeberg.org/oceanicc/helichor/media/branch/demo/preview.webp)
 
 ---
 
