@@ -1,0 +1,29 @@
+on:
+  push:
+    tags: ["*"]
+
+jobs:
+  release:
+    runs-on: codeberg-tiny
+    env:
+      TAG: ${{ github.ref_name }}
+      TOKEN: ${{ secrets.RELEASE_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - run: |
+          set -eu
+          command -v zip >/dev/null || { apt-get update -qq && apt-get install -y -qq zip; }
+          api="${{ github.server_url }}/api/v1/repos/${{ github.repository }}/releases"
+
+          for d in theme newtab; do
+            (cd "$d" && zip -qr "../helichor-$d-$TAG.zip" .)
+          done
+
+          id=$(curl -fsS -H "Authorization: token $TOKEN" -H "Content-Type: application/json" \
+                    -d "{\"tag_name\":\"$TAG\"}" "$api" | jq .id)
+
+          for f in *.zip; do
+            curl -fsS -H "Authorization: token $TOKEN" -F "attachment=@$f" "$api/$id/assets?name=$f"
+          done
