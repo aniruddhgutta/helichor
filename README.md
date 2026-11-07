@@ -23,19 +23,20 @@ this repo contains two seperate extensions, since helium ignores
 
 ### Packed
 
-1. Download both zips from the latest [release](../../releases)
+1. Download both `.crx` files from the latest
+   [release](https://codeberg.org/oceanicc/helichor/releases)
 2. Open `helium://extensions` and enable **Developer mode** (top-right toggle)
-3. Drag each zip onto the page
+3. Drag each `.crx` onto the page
 4. Done
 
-helium unpacks them into your profile, so the zips are safe to delete
+helium installs them into your profile, so the files are safe to delete
 afterwards.
 
 ### Unpacked
 
 if you want to edit/manage the colors yourself (eg: using `reclr`):
 
-1. Clone this repo, or unzip a release
+1. Clone this repo
 2. Open `helium://extensions` and enable **Developer mode** (top-right toggle)
 3. Click **Load unpacked** and select `theme/`, then repeat for `newtab/`
 4. To refresh colors, copy/symlink them in and reload, eg:
