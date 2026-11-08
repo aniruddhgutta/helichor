@@ -65,3 +65,14 @@ ln -sf ~/.cache/reclr/colors.css \
 > - Incognito windows aren't affected, this is a helium limitation
 > - The theme doesn't cleanly apply either, this is a helium limitation
 
+---
+
+## Tips
+
+here are some nice qol flags (`helium://flags`) you can enable for an even
+cleaner experience:
+
+- `#enable-incognito-themes`: retain themeing in incognito aswell
+- `#overlay-scrollbars`: enable sleeker scrollbars that fade out when unused
+- `#hide-fullscreen-exit-ui`: hide the 'X' that appears when you hover over
+  the top of the window
